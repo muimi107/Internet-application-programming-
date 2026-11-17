@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 4e</title>
+</head>
+<body>
+
+  <h1>Question 4(e): Functions in a Quiz App</h1>
+
+  <h2>i. Function declaration vs function expression</h2>
+  <pre>
+// Function declaration
+function checkAnswer(chosen, correct) {
+  return chosen === correct;
+}
+
+// Function expression
+const calculateScore = function (right, total) {
+  return (right / total) * 100;
+};
+  </pre>
+  <p>A function declaration starts with the function keyword and a name. It is hoisted, so it can be called before the line where it is written.</p>
+  <p>A function expression stores a function in a variable. It is not hoisted, so it can only be used after the line where it is defined.</p>
+
+  <h2>ii. Purpose of the return statement</h2>
+  <p>The return statement sends a value back to the code that called the function and stops the function. In the quiz app, it gives back whether an answer is correct or the student's score, so the result can be shown or saved. Without return, a function gives back undefined.</p>
+
+</body>
+</html>

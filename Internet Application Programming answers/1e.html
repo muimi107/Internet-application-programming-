@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 1e</title>
+</head>
+<body>
+
+  <h1>Question 1(e)</h1>
+
+  <h2>Incorrect code</h2>
+  <pre>
+&lt;form&gt;
+  &lt;Input Type=text name=studentName&gt;
+  &lt;input type="radio" name="gender" value="Male"&gt;
+  &lt;input type="radio" name="sex" value="Female"&gt;
+  &lt;input type=submit value=Register&gt;
+&lt;/form&gt;
+  </pre>
+
+  <h2>Three errors</h2>
+  <ol>
+    <li>The radio buttons have different names ("gender" and "sex"). Radio buttons only work as a group when they share the same name, so a user could select both.</li>
+    <li>Attribute values have no quotes, and Input Type is written in capitals. Values must be in quotes and tags should be lowercase.</li>
+    <li>There are no labels, and the form has no action or method. Users cannot tell what each field is for, and the form does not know where to send the data.</li>
+  </ol>
+
+  <h2>Corrected code</h2>
+  <pre>
+&lt;form action="register.php" method="post"&gt;
+  &lt;label for="studentName"&gt;Student Name:&lt;/label&gt;
+  &lt;input type="text" id="studentName" name="studentName"&gt;
+
+  &lt;input type="radio" id="male" name="gender" value="Male"&gt;
+  &lt;label for="male"&gt;Male&lt;/label&gt;
+  &lt;input type="radio" id="female" name="gender" value="Female"&gt;
+  &lt;label for="female"&gt;Female&lt;/label&gt;
+
+  &lt;input type="submit" value="Register"&gt;
+&lt;/form&gt;
+  </pre>
+
+</body>
+</html>

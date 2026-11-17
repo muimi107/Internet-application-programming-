@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 4b</title>
+</head>
+<body>
+
+  <h1>Question 4(b): JavaScript Events (M-Banking)</h1>
+
+  <h2>1. click</h2>
+  <p>Triggered when the customer taps the Check Balance button.</p>
+  <button id="balanceBtn">Check Balance</button>
+
+  <h2>2. input</h2>
+  <p>Triggered each time the customer types in the amount field, so the app can show the amount being sent.</p>
+  <input type="number" id="amount" placeholder="Amount in KSh">
+
+  <h2>3. submit</h2>
+  <p>Triggered when the customer presses Send Money, so the app can check the details before sending.</p>
+  <form id="sendForm">
+    <input type="text" id="phone" placeholder="Phone number">
+    <button type="submit">Send Money</button>
+  </form>
+
+  <script>
+    document.getElementById("balanceBtn").addEventListener("click", function () {
+      alert("Your balance is KSh 12,450");
+    });
+
+    document.getElementById("amount").addEventListener("input", function () {
+      console.log("Amount typed: " + this.value);
+    });
+
+    document.getElementById("sendForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Money sent");
+    });
+  </script>
+
+  <h2>Which is preferred?</h2>
+  <p>addEventListener is preferred. It keeps JavaScript separate from HTML, allows many handlers on one event, and can be removed later. The HTML attribute (for example onclick="...") mixes code into the page and allows only one handler.</p>
+
+</body>
+</html>

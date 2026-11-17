@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Simple Webpage</title>
+    <style>
+        #main-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 20px;
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff7d6;
+            border: 4px solid #432f2e;
+            border-radius: 12px;
+        }
+
+        .main-title {
+            width: 100%;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0 0 15px;
+            color: #27344a;
+        }
+
+        .generalstyle {
+                flex: 1;
+                min-height: 200px;
+                padding: 20px;
+                background-color: #27344a;
+                color: #e4d8c5;
+                text-align: center;
+                font-size: 18px;
+                border: 2px solid #432f2e;
+                border-radius: 10px;
+}
+        
+    </style>
+</head>
+    <body>
+        <div id="main-container">
+            <p class="main-title"> This is the main div</p>
+            <div class="generalstyle">
+                <p>This is the first inner div</p>
+            </div>
+
+            <div class="generalstyle">
+                <p>This is the second inner div</p>
+            </div>
+            
+            <div class="generalstyle">
+                <p>This is the last inner div</p>
+            </div>
+        </div>
+    </body>
+</hmtl>

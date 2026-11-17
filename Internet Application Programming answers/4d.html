@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 4d</title>
+</head>
+<body>
+
+  <h1>Question 4(d): The DOM</h1>
+
+  <p>The Document Object Model (DOM) is a tree-like representation of an HTML page that the browser creates when the page loads. Every tag, attribute and piece of text becomes an object (node) in the tree.</p>
+  <p>JavaScript uses the DOM to select elements, change their content or style, and add or remove elements, so the page updates without reloading.</p>
+
+  <div id="alert-banner">COVID-19 Notice: Wash your hands and wear a mask in crowded places.</div>
+
+  <script>
+    var banner = document.getElementById("alert-banner");
+    var today = new Date().getDay();
+    var isWeekday = false;
+
+    for (var day = 1; day <= 5; day++) {
+      if (today === day) {
+        isWeekday = true;
+      }
+    }
+
+    if (isWeekday) {
+      banner.style.display = "block";
+    } else {
+      banner.style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

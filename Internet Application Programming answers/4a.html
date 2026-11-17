@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 4a</title>
+</head>
+<body>
+
+  <h1>Question 4(a): Data Types and var, let, const</h1>
+
+  <h2>Four primitive data types</h2>
+  <ul>
+    <li>String: text, for example "Wanjiku"</li>
+    <li>Number: whole numbers and decimals, for example 25</li>
+    <li>Boolean: true or false</li>
+    <li>Undefined: a variable declared with no value yet</li>
+  </ul>
+
+  <h2>Declarations</h2>
+  <script>
+    let name = "Wanjiku";
+    let age = 25;
+    let isStudent = true;
+    let address;
+
+    document.write("name = " + name + " (" + typeof name + ")<br>");
+    document.write("age = " + age + " (" + typeof age + ")<br>");
+    document.write("isStudent = " + isStudent + " (" + typeof isStudent + ")<br>");
+    document.write("address = " + address + " (" + typeof address + ")<br>");
+  </script>
+
+  <h2>var, let and const</h2>
+  <ul>
+    <li>var: function scope, can be changed and re-declared. It can cause bugs, so it is avoided.</li>
+    <li>let: block scope, can be changed but cannot be re-declared in the same scope.</li>
+    <li>const: block scope, cannot be changed after it is given a value.</li>
+  </ul>
+
+  <h2>Preferred</h2>
+  <p>const is preferred for values that do not change, and let for values that must change. var is avoided because its function scope and re-declaration cause hard-to-find bugs.</p>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 4c</title>
+</head>
+<body>
+
+  <h1>Nairobi Water Bill Payment</h1>
+
+  <input type="number" id="meter" placeholder="Meter reading">
+  <input type="number" id="amount" placeholder="Amount in KSh">
+  <button onclick="validatePayment(document.getElementById('meter').value, document.getElementById('amount').value)">Pay</button>
+
+  <script>
+    function validatePayment(meterReading, amount) {
+      if (meterReading === "" || Number(meterReading) === 0) {
+        alert("Please enter a valid meter reading.");
+      } else if (amount === "" || Number(amount) === 0) {
+        alert("Please enter the amount to pay.");
+      } else if (Number(amount) > 50000) {
+        alert("Amount cannot be more than KSh 50,000.");
+      } else {
+        alert("Payment accepted.");
+      }
+    }
+  </script>
+
+</body>
+</html>

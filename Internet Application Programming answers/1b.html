@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 1b</title>
+
+  <style>
+    .margin  { background: orange; padding: 25px; text-align: center; }
+    .border  { background: gold; padding: 8px; border: 6px solid black; }
+    .padding { background: lightgreen; padding: 25px; }
+    .content { background: lightblue; padding: 25px; font-weight: bold; }
+
+    .card {
+      width: 220px;
+      padding: 15px;
+      border: 2px solid darkblue;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Question 1(b): The CSS Box Model</h1>
+
+  <h2>Diagram</h2>
+  <div class="margin">MARGIN
+    <div class="border">BORDER
+      <div class="padding">PADDING
+        <div class="content">CONTENT</div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Explanation</h2>
+  <ul>
+    <li><b>Content:</b> the product image, name and price. It sets the size of the card.</li>
+    <li><b>Padding:</b> space between the content and the border. It stops text touching the edge.</li>
+    <li><b>Border:</b> the line around the padding. It separates one card from another.</li>
+    <li><b>Margin:</b> the space outside the border. It controls the gap between cards.</li>
+  </ul>
+
+  <h2>Product card example</h2>
+  <div class="card">
+    <h3>Maasai Shuka</h3>
+    <p>KSh 1,500</p>
+  </div>
+
+</body>
+</html>
